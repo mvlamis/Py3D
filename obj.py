@@ -25,7 +25,7 @@ class Object3D:
 
         for vertex in vertices:
             if not np.any((vertex == self.render.H_WIDTH) | (vertex == self.render.H_HEIGHT)):
-                pg.draw.circle(self.render.screen, pg.Color('white'), vertex, 2)
+                pg.draw.circle(self.render.screen, pg.Color('red'), vertex, 2)
                 
 
     def translate(self, pos):
